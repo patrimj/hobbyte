@@ -132,13 +132,14 @@
 --- 
 #### Destapar Casilla
 
-- URL: `http://192.168.1.150:8080/destapar/:idPartida/:idCasilla`
+- URL: `http://192.168.1.150:8080/destapar/:idUsuario/:idCasilla`
 - Método: `POST`
 - Datos requeridos:
     - `token`: Token de autenticación (string)
-    - `idPartida`: Id de la partida para ver su tablero (int)
+    - `idUsuario`: Id del usuario al que pertenece la partida y la casilla (int)
     - `idCasilla`: Id de la casilla que se quiere destapar (int)
 
+> El usuario al que le pertenece la partida será el unico que pueda destapar sus casillas
 --- 
 #### Estado de la partida
 
