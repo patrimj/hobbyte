@@ -16,9 +16,9 @@
 - URL : ``http://192.168.1.150:8080/registrar``
 - Método : ``POST``
 - Datos Requeridos : 
-    - ``nombre`` : Nombre del usuario
-    - ``correo`` : Correo del usuario
-    - ``contrasena`` : Contraseña del usuario
+    - ``nombre`` : Nombre del usuario (string)
+    - ``correo`` : Correo del usuario (string)
+    - ``contrasena`` : Contraseña del usuario (string)
 
 ##### Ejemplo de solicitud para registrar usuario
 ```json
@@ -34,11 +34,12 @@
 - URL: `http://192.168.1.150:8080/login`
 - Método: `POST`
 - Datos requeridos:
-    - `email`: Email del usuario (string, requerido)
-    - `password`: Contraseña del usuario (string, requerido)
+    - `email`: Email del usuario registradi (string)
+    - `password`: Contraseña del usuario registrado (string)
 - Datos de respuesta:
     - `token`: Token de autenticación (string)
 > El token de autenticación es necesario para realizar cualquier solicitud a la API.
+
 ##### Ejemplo de solicitud para iniciar sesión
 ```json
 {
@@ -54,7 +55,7 @@
 - Método: `GET`
 - Datos requeridos:
     - `token`: Token de autenticación (string)
-> El token de autenticación recibido en el login se colocará en ``Auth`` > ``Bearer``
+> El token de autenticación recibido en el login se colocará en ``Auth`` > ``Bearer`` (Thunder Client)
 ---
 
 #### Ver usuario por email
@@ -79,7 +80,7 @@
 ##### Ejemplo de solicitud para modificar usuario
 ```json
 {
-  "nombre": "Patricia",
+  "nombre": "Usuario",
   "email": "prueba@correo.com",
   "password": "admin123"
 }
@@ -228,7 +229,7 @@
 - Método: `GET`
 - Datos requeridos:
     - `token`: Token de autenticación (string)
-    - `tipo_prueba`: Tipo de heroe (string)
+    - `tipo_prueba`: Tipo de prueba que realiza el heroe (string)
 
 ---
 
@@ -239,7 +240,7 @@
 - Datos requeridos:
     - `token`: Token de autenticación (string)
     - `idPartida`: Id de la partida (int)
-    - `tipo_prueba`: Tipo de heroe (string)
+    - `tipo_prueba`: Tipo de prueba que realiza el heroe  (string)
 ---
 
 
