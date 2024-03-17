@@ -18,7 +18,7 @@
 - Datos Requeridos : 
     - ``nombre`` : Nombre del usuario (string)
     - ``correo`` : Correo del usuario (string)
-    - ``contrasena`` : Contraseña del usuario (string)
+    - ``password`` : Contraseña del usuario (string)
 
 ##### Ejemplo de solicitud para registrar usuario
 ```json
@@ -34,11 +34,11 @@
 - URL: `http://192.168.1.150:8080/login`
 - Método: `POST`
 - Datos requeridos:
-    - `email`: Email del usuario registradi (string)
+    - `email`: Email del usuario registrado (string)
     - `password`: Contraseña del usuario registrado (string)
 - Datos de respuesta:
     - `token`: Token de autenticación (string)
-> El token de autenticación es necesario para realizar cualquier solicitud a la API.
+> El token de autenticación es necesario para realizar cualquier solicitud a la API
 
 ##### Ejemplo de solicitud para iniciar sesión
 ```json
